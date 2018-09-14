@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ExamenTest</string>
+    <string name="bici_titulo">BICICLETA VINTAGE</string>
+    <string name="text_color_picker">COLOR</string>
+    <string name="text_button_medium">M</string>
+    <string name="text_button_small">P</string>
+    <string name="text_button_large">G</string>
+    <string name="text_button_xlarge">XG</string>
+    <string name="text_tv_description">DESCRIPCIÓN</string>
+    <string name="text_tv_description_content">
+        Marco personalizado liviano de acero. En hermosas condiciones originales sin restaurar.
+        Poco uso y bien conservada. Build super record.
+    </string>
+    <string name="text_tv_measurement">MEDIDAS</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </string>
+    <string name="text_btn_addtocart">AÑADIR A CARRITO</string>
+    <string name="like_message">+1 a bicicleta vintage</string>
+    <string name="msg_add">Añadir a carrito</string>
+    <string name="msg_added">Añadido a carrito</string>
+    <string name="msg_already">Ya añadido</string>
+    <string name="undo">DESHACER</string>
+</resources>

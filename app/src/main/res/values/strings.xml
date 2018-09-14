@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ExamenTest</string>
+    <string name="bici_titulo">VINTAGE BICYCLE</string>
+    <string name="text_color_picker">COLOR</string>
+    <string name="text_button_medium">M</string>
+    <string name="text_button_small">S</string>
+    <string name="text_button_large">L</string>
+    <string name="text_button_xlarge">XL</string>
+    <string name="text_tv_description">DESCRIPTION</string>
+    <string name="text_tv_description_content">
+        Custom lightweight steel frame. Unrestored in beatiful original condition. Lightly used
+        and well kept. Full super record build.
+    </string>
+    <string name="text_tv_measurement">MEDIDAS</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </string>
+    <string name="text_btn_addtocart">ADD TO CART</string>
+    <string name="like_message">+1 to vintage bicycle</string>
+    <string name="msg_add">Add to Cart</string>
+    <string name="msg_added">Added to Cart</string>
+    <string name="msg_already">Item already is in Cart</string>
+    <string name="undo">UNDO</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bici_height">210dp</dimen>
+    <dimen name="bici_text_size">30sp</dimen>
+    <dimen name="text_color_picker_size">20sp</dimen>
+    <dimen name="size_picker_btn_size">30dp</dimen>
+    <dimen name="size_picker_btn_txt">20sp</dimen>
+    <dimen name="size_picker_btn_margin">8dp</dimen>
+    <dimen name="btn_text_addtocart">14sp</dimen>
+    <dimen name="btn_padding_addtocart">6dp</dimen>
+    <dimen name="margin_bottom">12dp</dimen>
+    <dimen name="margin_left_right">8dp</dimen>
+</resources>

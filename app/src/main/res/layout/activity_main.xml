@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/am_scroll_view">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/am_iv_bicicleta"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bici_height"
+        android:scaleType="centerInside"
+        android:src="@mipmap/bici"
+        android:background="@drawable/image_border"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        tools:context=".ActivityMain">
+        <TextView
+            android:id="@+id/am_tv_bici_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/bici_titulo"
+            android:textStyle="bold"
+            android:textSize="@dimen/bici_text_size"
+            android:layout_marginBottom="@dimen/margin_bottom"/>
+
+        <ImageButton
+            android:id="@+id/am_iv_like"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_toEndOf="@id/am_tv_bici_titulo"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitEnd"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/like"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:onClick="btnLikeOnAction"/>
+
+        <TextView
+            android:id="@+id/am_tv_color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/am_iv_like"
+            android:text="@string/text_color_picker"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_color_picker_size" />
+
+        <RadioGroup
+            android:id="@+id/am_rg_color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/am_tv_color_picker" >
+            <RadioButton
+                android:id="@+id/am_rb_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/rb_gray"
+                android:onClick="rgColorChanged" />
+            <RadioButton
+                android:id="@+id/am_rb_brown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/rb_brown"
+                android:onClick="rgColorChanged" />
+            <RadioButton
+                android:id="@+id/am_rb_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/rb_pink"
+                android:onClick="rgColorChanged" />
+            <RadioButton
+                android:id="@+id/am_rb_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/rb_black"
+                android:onClick="rgColorChanged" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/am_rg_size_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/am_rg_color_picker"
+            android:layout_marginBottom="@dimen/margin_bottom">
+            <Button
+                android:id="@+id/am_btn_medium"
+                android:layout_width="@dimen/size_picker_btn_size"
+                android:layout_height="@dimen/size_picker_btn_size"
+                android:background="@android:color/transparent"
+                android:text="@string/text_button_medium"
+                android:textSize="@dimen/size_picker_btn_txt"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/size_picker_btn_margin"
+                android:layout_marginRight="@dimen/size_picker_btn_margin"
+                android:onClick="rgSizeChanged"
+                />
+            <Button
+                android:id="@+id/am_btn_small"
+                android:layout_width="@dimen/size_picker_btn_size"
+                android:layout_height="@dimen/size_picker_btn_size"
+                android:background="@android:color/transparent"
+                android:text="@string/text_button_small"
+                android:textSize="@dimen/size_picker_btn_txt"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/size_picker_btn_margin"
+                android:layout_marginRight="@dimen/size_picker_btn_margin"
+                android:onClick="rgSizeChanged"
+                />
+            <Button
+                android:id="@+id/am_btn_large"
+                android:layout_width="@dimen/size_picker_btn_size"
+                android:layout_height="@dimen/size_picker_btn_size"
+                android:background="@android:color/transparent"
+                android:text="@string/text_button_large"
+                android:textSize="@dimen/size_picker_btn_txt"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/size_picker_btn_margin"
+                android:layout_marginRight="@dimen/size_picker_btn_margin"
+                android:onClick="rgSizeChanged"
+                />
+            <Button
+                android:id="@+id/am_btn_xlarge"
+                android:layout_width="@dimen/size_picker_btn_size"
+                android:layout_height="@dimen/size_picker_btn_size"
+                android:background="@android:color/transparent"
+                android:text="@string/text_button_xlarge"
+                android:textSize="@dimen/size_picker_btn_txt"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/size_picker_btn_margin"
+                android:layout_marginRight="@dimen/size_picker_btn_margin"
+                android:onClick="rgSizeChanged"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/am_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/am_rg_size_picker"
+            android:text="@string/text_tv_description"
+            android:textSize="@dimen/text_color_picker_size"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <TextView
+            android:id="@+id/am_tv_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/am_tv_description"
+            android:text="@string/text_tv_description_content"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <TextView
+            android:id="@+id/am_tv_measurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/am_tv_description_content"
+            android:text="@string/text_tv_measurement"
+            android:textSize="@dimen/text_color_picker_size"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <TextView
+            android:id="@+id/am_tv_measurement_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/am_tv_measurement"
+            android:text="@string/lorem_ipsum"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <Button
+            android:id="@+id/am_btn_addtocart"
+            android:layout_below="@id/am_tv_measurement_content"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/rb_gray"
+            android:text="@string/text_btn_addtocart"
+            android:padding="@dimen/btn_padding_addtocart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_color_picker_size"
+            android:onClick="addToCartOnAction" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
